@@ -5,10 +5,9 @@
 This project was developed as an **End-of-Studies Internship Project** for the **Bachelor's Degree in Software Engineering and Information Systems**, Faculty of Sciences of Monastir, University of Monastir, conducted at **SmartLab, Faculty of Medicine of Monastir**.
 
 <p align="center">
-  <img width="600" src="assets/deepneuro_logo.png" alt="DeepNeuro Logo — replace with Figure 1.3" />
-  <br>
-  <em>Figure: DeepNeuro Platform Logo</em>
+  <img width="300" src="https://github.com/user-attachments/assets/c870faad-5488-402a-84cf-2dab850a4e50" />
 </p>
+
 
 ---
 
@@ -53,9 +52,7 @@ The platform was trained and evaluated on the **BraTS 2024** (glioma) and **ISLE
 DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to improve scalability, modularity, and maintainability.
 
 <p align="center">
-  <img width="650" src="assets/three_tier_architecture.png" alt="Three-tier architecture — replace with Figure 1.4" />
-  <br>
-  <em>Figure: Three-Tier Architecture</em>
+  <img width="900" src="https://github.com/user-attachments/assets/86020e58-8e8d-4965-8759-119e68209ad9" />
 </p>
 
 | Layer | Main Responsibilities |
@@ -107,12 +104,30 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 - **T1-contrast enhanced (T1c):** highlights enhancing tumor regions.
 - **T2-weighted (T2w):** edema and tumor boundaries.
 - **FLAIR (T2f):** suppresses fluid signal, enhances lesion visibility.
+<table align="center" >
+  <tr>
+    <td colspan="2" align="center">
+      <h3>MRI Tests on the Same Patient X</h3>
+    </td>
+  </tr>
 
-<p align="center">
-  <img width="700" src="assets/brats_modalities.png" alt="BraTS 2024 MRI modalities — replace with Figure 5.3 / README Fig T1n-T1c-T2f-T2w" />
-  <br>
-  <em>Figure: BraTS 2024 MRI Modalities for the Same Patient</em>
-</p>
+  <tr>
+    <td align="center"><b>T1n</b></td>
+    <td align="center"><b>T1c</b></td>
+  </tr>
+  <tr>
+    <td><img width="600" height="400" src="https://github.com/user-attachments/assets/a442156b-c73e-4b4e-a279-7257d8ac633d" /></td>
+    <td><img width="600" height="400" src="https://github.com/user-attachments/assets/bc7c7471-084f-4347-b3c4-2c27284a7333" /></td>
+  </tr>
+  <tr>
+    <td align="center"><b>T2f</b></td>
+    <td align="center"><b>T2w</b></td>
+  </tr>
+  <tr>
+    <td><img width="600" height="400" src="https://github.com/user-attachments/assets/b27657c9-327d-49ae-88c9-06944b982e9e" /></td>
+    <td><img width="600" height="400" src="https://github.com/user-attachments/assets/b02966ed-05f7-45ba-97fc-fe25992c8a32" /></td>
+  </tr>
+</table>
 
 **Segmentation classes:**
 
@@ -125,9 +140,7 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 | 4 | Resection cavity |
 
 <p align="center">
-  <img width="700" src="assets/brats_segmentation_mask.png" alt="BraTS segmentation mask overlay — replace with Figure 5.4" />
-  <br>
-  <em>Figure: BraTS 2024 Segmentation Mask Example (T1n MRI with Tumor Overlay)</em>
+  <img width="900" src="https://github.com/user-attachments/assets/6d4779e8-eb8e-496a-9d82-93009fdc764b" />
 </p>
 
 ### 2️⃣ ISLES 2022 — Ischemic Stroke Lesion Segmentation
@@ -139,9 +152,7 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 - **FLAIR** (281×352×352): additional structural information (requires resizing).
 
 <p align="center">
-  <img width="700" src="assets/isles_modalities.png" alt="ISLES 2022 DWI/ADC modalities — replace with Figure 5.5" />
-  <br>
-  <em>Figure: ISLES 2022 DWI and ADC MRI Modalities</em>
+  <img width="900" src="https://github.com/user-attachments/assets/0c6352e3-5ef4-4e55-9ef3-c735ada31d0c"/>
 </p>
 
 **Segmentation classes:**
@@ -152,9 +163,7 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 | 1 | Ischemic stroke lesion |
 
 <p align="center">
-  <img width="700" src="assets/isles_segmentation_mask.png" alt="ISLES stroke mask overlay — replace with Figure 5.6" />
-  <br>
-  <em>Figure: ISLES 2022 Stroke Segmentation Mask Example (ADC with Overlay)</em>
+  <img width="900" src="https://github.com/user-attachments/assets/cd762481-9344-426d-a3e7-82ecfadebf0e" />
 </p>
 
 ---
@@ -170,9 +179,7 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 5. **Multi-modal stacking** into a single 4D volume (e.g., 128×128×128×4 for BraTS).
 
 <p align="center">
-  <img width="750" src="assets/preprocessing_workflow.png" alt="Preprocessing & augmentation workflow — replace with the BraTS24 workflow diagram" />
-  <br>
-  <em>Figure: Data Processing and Augmentation Workflow</em>
+  <img width="900" src="https://github.com/user-attachments/assets/430772cf-7b10-4949-a766-48feb7065b5a" />
 </p>
 
 **Augmentation techniques** (applied jointly to volumes and masks to preserve spatial consistency):
@@ -183,11 +190,37 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 - Gaussian noise injection
 - Gamma correction
 
-<p align="center">
-  <img width="750" src="assets/augmentation_examples.png" alt="Data augmentation examples — replace with Figure 5.7" />
-  <br>
-  <em>Figure: Examples of Data Augmentation Applied to Medical Image Slices</em>
-</p>
+<table align="center">
+  <tr>
+    <td align="center"><b>Image 1</b></td>
+    <td align="center"><b>Image 2</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img width="600" height="400"
+           src="https://github.com/user-attachments/assets/6e214cd2-0317-4955-b295-3f1be7010c05" />
+    </td>
+    <td>
+      <img width="600" height="400"
+           src="https://github.com/user-attachments/assets/68852274-1459-40a4-98cd-f4dfc479c0d6" />
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center"><b>Image 3</b></td>
+    <td align="center"><b>Image 4</b></td>
+  </tr>
+  <tr>
+    <td>
+      <img width="600" height="400"
+           src="https://github.com/user-attachments/assets/1cdebeda-da35-4a5b-a887-b7a78527b843" />
+    </td>
+    <td>
+      <img width="600" height="400"
+           src="https://github.com/user-attachments/assets/dd95fa6d-cd63-4f05-8397-2f061af9b18b" />
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -196,9 +229,7 @@ DeepNeuro follows a **three-tier architecture** (Presentation, Logic, Data) to i
 DeepNeuro adopts a **3D Hybrid U-Net** combining a classic encoder–bottleneck–decoder structure with **MedNeXt-style convolutional blocks** and **adaptive normalization**.
 
 <p align="center">
-  <img width="800" src="assets/hybrid_3d_mednext_unet.png" alt="Hybrid 3D MedNeXt U-Net architecture — replace with Figure 5.8" />
-  <br>
-  <em>Figure: Hybrid 3D MedNeXt U-Net Architecture</em>
+  <img width="900" alt="Hybrid 3D MedNeXt U-Net Arch" src="https://github.com/user-attachments/assets/dc848d61-42a6-4863-bd0c-5fdb24bd1785" />
 </p>
 
 **Key design choices:**
