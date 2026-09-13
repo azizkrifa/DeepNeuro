@@ -272,9 +272,7 @@ Dice = (2 × |P ∩ G| + ε) / (|P| + |G| + ε)
 | **160×192×160×4** | **2** | **(4, 5)** | **0.284** | **0.791** ✅ |
 
 <p align="center">
-  <img width="800" src="assets/brats_training_curves.png" alt="BraTS training/validation DSC & loss curves — replace with Figure 5.9" />
-  <br>
-  <em>Figure: Training and Validation DSC and Loss Curves — BraTS 2024</em>
+  <img width="800" src="https://github.com/user-attachments/assets/77c1dc18-0a81-427c-8a83-77cea8fbc175"/>
 </p>
 
 ### ISLES 2022 (Ischemic Stroke)
@@ -286,9 +284,7 @@ Dice = (2 × |P ∩ G| + ε) / (|P| + |G| + ε)
 | **ADC + DWI** | **112×112×72×2** | **5** | **(4, 5)** | **0.287** | **0.851** ✅ |
 
 <p align="center">
-  <img width="800" src="assets/isles_training_curves.png" alt="ISLES training/validation DSC & loss curves — replace with Figure 5.10" />
-  <br>
-  <em>Figure: Training and Validation DSC and Loss Curves — ISLES 2022</em>
+  <img width="800" src="https://github.com/user-attachments/assets/b8327197-ef80-4c23-afd1-e331b594a627" />
 </p>
 
 ---
@@ -305,16 +301,18 @@ Secure sign-up, login, email verification (temporary codes), password hashing, a
     <td align="center"><b>Duplicate Email Error</b></td>
   </tr>
   <tr>
-    <td><img width="380" src="assets/registration_interface.png" alt="User Registration Interface — Figure 3.4" /></td>
-    <td><img width="380" src="assets/duplicate_email_error.png" alt="Duplicate Email Error — Figure 3.5" /></td>
+    <td><img width="380" src="https://github.com/user-attachments/assets/ac841173-1651-49ca-8698-d99878438d4e" /></td>
+    <td><img width="380" src="https://github.com/user-attachments/assets/e4520830-5a3b-44c0-bc0f-2bab89e7f37b" /></td>
   </tr>
   <tr>
     <td align="center"><b>Login</b></td>
     <td align="center"><b>Email Verification</b></td>
   </tr>
   <tr>
-    <td><img width="380" src="assets/login_interface.png" alt="User Login Interface — Figure 3.6" /></td>
+    <td><img width="380" src="https://github.com/user-attachments/assets/f6d465f6-043c-4c65-bca6-cfd9b4838753"/></td>
     <td><img width="380" src="assets/email_verification_interface.png" alt="Email Verification Interface — Figure 3.7" /></td>
+    <img width="868" height="914" alt="image" src="https://github.com/user-attachments/assets/dc2fe6e5-6691-43d3-9872-ffb709439298" />
+
   </tr>
 </table>
 
@@ -323,25 +321,19 @@ Secure sign-up, login, email verification (temporary codes), password hashing, a
 Doctor dashboard, patient record CRUD, case submission to radiologists, and medical history tracking.
 
 <p align="center">
-  <img width="700" src="assets/doctor_dashboard.png" alt="Doctor Dashboard Interface — Figure 4.4" />
-  <br>
-  <em>Figure: Doctor Dashboard Interface</em>
+  <img width="700" src="https://github.com/user-attachments/assets/fdb3584d-1055-4c89-8c28-3fe652f161f0" />
 </p>
 
 **2D Medical Image Visualization** — four independent panels for multi-modality comparison, drag-and-drop file loading, slice navigation slider, multiple colormaps (grayscale, jet, hot, etc.), and side-by-side comparison of scans across dates.
 
 <p align="center">
-  <img width="750" src="assets/2d_visualization_interface.png" alt="2D Medical Image Visualization Interface — Figure 4.5" />
-  <br>
-  <em>Figure: 2D Medical Image Visualization Interface</em>
+  <img width="750" src="https://github.com/user-attachments/assets/b5a92603-dca3-4527-874a-e1758b2e59d5" />
 </p>
 
 **3D Segmentation Visualization** — interactive 3D brain models, adjustable layer opacity, color-coded tumor subregions (necrotic core: brown, edema: green, enhancing tumor: red, resection cavity: blue), and a quantitative statistics panel (brain/tumor voxels, tumor volume).
 
 <p align="center">
-  <img width="750" src="assets/3d_visualization_interface.png" alt="3D Segmentation Mask Visualization Interface — Figure 4.6" />
-  <br>
-  <em>Figure: 3D Segmentation Mask Visualization Interface</em>
+  <img width="750" src="https://github.com/user-attachments/assets/71164b82-d682-4b4b-b700-aa760dd102ca" />
 </p>
 
 ### 🩻 AI Diagnostic Workflow
@@ -354,52 +346,10 @@ Case information review and MRI upload → preprocessing → AI inference → se
     <td align="center"><b>Segmentation Workflow</b></td>
   </tr>
   <tr>
-    <td><img width="380" src="assets/case_information_interface.png" alt="Case Information Interface — Figure 5.11a" /></td>
-    <td><img width="380" src="assets/segmentation_workflow_interface.png" alt="Segmentation Workflow Interface — Figure 5.11b" /></td>
+    <td><img width="380" src="https://github.com/user-attachments/assets/e517b1d2-ea30-40fe-bfca-74cbb573209c" /></td>
+    <td><img width="380" src="https://github.com/user-attachments/assets/5880a8f7-aa0f-4738-966c-caadb1041a50" /></td>
   </tr>
 </table>
-
----
-
-## 📐 System Design Diagrams
-
-<p align="center">
-  <img width="800" src="assets/global_use_case_diagram.png" alt="Global Use Case Diagram — Figure 2.1" />
-  <br>
-  <em>Global Use Case Diagram of the DeepNeuro System</em>
-</p>
-
-<p align="center">
-  <img width="800" src="assets/global_class_diagram.png" alt="Global Class Diagram — Figure 2.2" />
-  <br>
-  <em>DeepNeuro Global Class Diagram (User, Doctor, Radiologist, Patient, DiagnosisRequest, FileUpload)</em>
-</p>
-
-<details>
-<summary>📄 Additional sequence diagrams (click to expand placeholders)</summary>
-
-<p align="center">
-  <img width="700" src="assets/signup_sequence_diagram.png" alt="Sign Up Sequence Diagram — Figure 3.2" /><br>
-  <em>Sign Up Sequence Diagram</em>
-</p>
-<p align="center">
-  <img width="700" src="assets/login_sequence_diagram.png" alt="Login Sequence Diagram — Figure 3.3" /><br>
-  <em>Login Sequence Diagram</em>
-</p>
-<p align="center">
-  <img width="700" src="assets/add_patient_sequence_diagram.png" alt="Add Patient Sequence Diagram — Figure 4.2" /><br>
-  <em>Add Patient Sequence Diagram</em>
-</p>
-<p align="center">
-  <img width="700" src="assets/send_case_sequence_diagram.png" alt="Send Case Sequence Diagram — Figure 4.3" /><br>
-  <em>Send Case Sequence Diagram</em>
-</p>
-<p align="center">
-  <img width="700" src="assets/segmentation_workflow_sequence_diagram.png" alt="Segmentation Workflow Sequence Diagram — Figure 5.2" /><br>
-  <em>Segmentation Workflow Sequence Diagram</em>
-</p>
-
-</details>
 
 ---
 
@@ -408,7 +358,7 @@ Case information review and MRI upload → preprocessing → AI inference → se
 The project followed an **Agile-inspired methodology** organized into three sprints:
 
 <p align="center">
-  <img width="700" src="assets/sprint_planning_strategy.png" alt="Sprint Planning Strategy — Figure 2.3" />
+  <img width="900" src="https://github.com/user-attachments/assets/4f39174d-08a0-4b2d-8984-64ffad0176b8" />
 </p>
 
 | Sprint | Focus |
