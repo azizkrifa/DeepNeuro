@@ -310,9 +310,7 @@ Secure sign-up, login, email verification (temporary codes), password hashing, a
   </tr>
   <tr>
     <td><img width="380" src="https://github.com/user-attachments/assets/f6d465f6-043c-4c65-bca6-cfd9b4838753"/></td>
-    <td><img width="380" src="assets/email_verification_interface.png" alt="Email Verification Interface — Figure 3.7" /></td>
-    <img width="868" height="914" alt="image" src="https://github.com/user-attachments/assets/dc2fe6e5-6691-43d3-9872-ffb709439298" />
-
+    <td><img width="380" src="https://github.com/user-attachments/assets/dc2fe6e5-6691-43d3-9872-ffb709439298" /></td>
   </tr>
 </table>
 
